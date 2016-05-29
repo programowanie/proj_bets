@@ -22,13 +22,16 @@ Rider::Rider()
 {
 	static int amountOfNames = (init(), names.size());
 	_name = names[rand() % amountOfNames];
-	inteligence = randomValue(10, 50);
-	slyness = randomValue(20, 80);
-	//ability = randomValue(20, 90);
-	//_experience = 0;
-
+	_inteligence = randomValue(10, 60);
+	_slyness = randomValue(20, 80);
 }
+
+int Rider::chances()
+{
+	return _inteligence + _slyness + _ability;
+}
+
 
 string Rider::description()
 {
-	return _name + "\n\tinteligence: " + to_string(inteligence) + " efficiency: " + to_string(slyness);}
+	return _name + "\n\tInteligencja: " + to_string(_inteligence) + " | Sprawnosc: " + to_string(_slyness) + " | Umiejetności: " + to_string(_ability);}

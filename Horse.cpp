@@ -22,13 +22,15 @@ Horse::Horse()
 {
 	static int amountOfNames = (init(), names.size());
 	_name = names[rand() % amountOfNames];
-	speed = randomValuee(20, 90);
-	efficiency = randomValuee(20, 90);
-	//ability = randomValuee(20, 90);
-	//_experience = 0;
+	_speed = randomValuee(10, 90);
+	_efficiency = randomValuee(10, 90);
+}
 
+int Horse::chances()
+{
+	return _speed + _efficiency + _ability;
 }
 
 string Horse::description()
 {
-	return _name + "\n\tspeed: " + to_string(speed) + " efficiency: " + to_string(efficiency) + "ability: " + to_string(_ability);}
+	return _name + "\n\tPrędkość: " + to_string(_speed) + " | Sprawnosc " + to_string(_efficiency) + " | Umijetnosci: " + to_string(_ability);}

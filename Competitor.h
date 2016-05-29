@@ -13,7 +13,10 @@ protected:
 	
 public:
 	Competitor();
+	int score;
 	int experience() {return _experience;}
 	int ability() {return _ability;}
+	int upgradeExperience(int*);
 	virtual std::string description() = 0;
+	virtual int chances() = 0;
 };

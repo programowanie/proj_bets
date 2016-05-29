@@ -10,14 +10,16 @@ class Horse: public Competitor
 {
 	static vector <string> names;
 	string _name;
-	int speed, efficiency;//, ability, _experience;
+	int _speed, _efficiency;
 
 	static void init();
 
 
 public:
 	Horse();
+	int chances();
 	string description();
-	//int experience() {return _experience;}
+	int speed() {return _speed;}
+	int efficiency() {return _efficiency;}
 	string name() {return _name;}
 };
