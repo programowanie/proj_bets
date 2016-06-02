@@ -34,4 +34,4 @@ int Rider::chances()
 
 string Rider::description()
 {
-	return _name + "\n\tInteligencja: " + to_string(_inteligence) + " | Sprawnosc: " + to_string(_slyness) + " | Umiejetności: " + to_string(_ability);}
+	return _name + "\n\t\tInteligencja: " + to_string(_inteligence) + " | Sprawnosc: " + to_string(_slyness) + " | Umiejetności: " + to_string(_ability);}

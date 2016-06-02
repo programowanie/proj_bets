@@ -33,4 +33,4 @@ int Horse::chances()
 
 string Horse::description()
 {
-	return _name + "\n\tPrędkość: " + to_string(_speed) + " | Sprawnosc " + to_string(_efficiency) + " | Umijetnosci: " + to_string(_ability);}
+	return _name + "\n\t\tPrędkość: " + to_string(_speed) + " | Sprawnosc " + to_string(_efficiency) + " | Umijetnosci: " + to_string(_ability);}
